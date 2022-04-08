@@ -38,7 +38,8 @@ if (isset($_POST["update_action"])) {
         <form action="category_update.php?id=<?php echo $category_id ?>" method="post" enctype="multipart/form-data">
 
             Tên chuyên mục:<?php echo isset($error['name']) ? $error['name'] : ''; ?><br>
-            <input type="text" name="name" value="<?php echo isset($data['name']) ? $data['name'] : ''; ?>" class="form-control"><br>
+            <input type="text" name="name" value="<?php echo isset($data['name']) ? $data['name'] : ''; ?>"
+                class="form-control"><br>
 
 
 

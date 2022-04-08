@@ -39,13 +39,14 @@ $data = $homelib->get_list($sql);
 
     <?php
 	for ($i = 0; $i < count($data); $i++) {
+		$id = $data[$i]["post_id"];
 	?>
     <div class="card mb-4">
         <img class="card-img-top" src="images/<?php echo $data[$i]['image']; ?>" height="300px" alt="Card image cap">
         <div class="card-body">
             <h2 class="card-title"><?php echo $data[$i]['title']; ?></h2>
             <p class="card-text"><?php echo substr($data[$i]['content'], 0, 200) . '...'; ?></p>
-            <a href="#" class="btn btn-primary">Xem thêm &rarr;</a>
+            <a href="./post_detail.php?id=<?php echo $id ?>" class="btn btn-primary">Xem thêm &rarr;</a>
         </div>
     </div>
     <?php
@@ -54,7 +55,7 @@ $data = $homelib->get_list($sql);
 
 
 
-    <ul class="pagination justify-content-center mb-4">
+    <ul class=" pagination justify-content-center mb-4">
         <?php
 		if ($current_page > 1 && $total_page > 1) {
 			echo '<li class="page-item"><a class="page-link" href="index.php?' . $link . 'page=' . ($current_page - 1) . '">Lùi Lại</a></li>';

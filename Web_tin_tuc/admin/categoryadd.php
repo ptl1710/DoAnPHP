@@ -34,7 +34,8 @@ $list_category = $adminlib->get_list($sql);
         <form action="categoryadd.php" method="post" enctype="multipart/form-data">
 
             Chuyên mục:<?php echo isset($error['name']) ? $error['name'] : ''; ?><br>
-            <input type="text" name="name" value="<?php echo isset($data['name']) ? $data['name'] : ''; ?>" class="form-control"><br>
+            <input type="text" name="name" value="<?php echo isset($data['name']) ? $data['name'] : ''; ?>"
+                class="form-control"><br>
 
             <input type="submit" name="add_action" value="Thêm chuyên mục" class="btn btn-success">
         </form>

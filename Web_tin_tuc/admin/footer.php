@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-lg-12">
-            &copy; &copy; kenbmt44@gmail.com | Design by: Nhóm 1
+            &copy; kenbmt44@gmail.com | Design by: Nhóm 1
         </div>
     </div>
 </div>

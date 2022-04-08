@@ -54,10 +54,11 @@ $data = $adminlib->get_list($sql);
                 for ($i = 0; $data != 0 && $i < count($data); $i++) {
                     $id = $data[$i]["category_id"];
                 ?>
-                    <tr>
-                        <td><?php echo $data[$i]["name"]; ?></td>
-                        <td><a href="category_update.php?id=<?php echo $id; ?>">Cập Nhật</a> | <a href="category_remove.php?id=<?php echo $id; ?>">Xóa</a></td>
-                    </tr>
+                <tr>
+                    <td><?php echo $data[$i]["name"]; ?></td>
+                    <td><a href="category_update.php?id=<?php echo $id; ?>">Cập Nhật</a> | <a
+                            href="category_remove.php?id=<?php echo $id; ?>">Xóa</a></td>
+                </tr>
                 <?php
                 }
                 ?>

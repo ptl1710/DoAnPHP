@@ -1,5 +1,5 @@
 <?php
-// Thừa kế class_db.php sử dụng extends
+
 class homelib extends dblib
 {
 

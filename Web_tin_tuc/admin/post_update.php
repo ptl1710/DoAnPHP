@@ -35,7 +35,6 @@ if (isset($_POST["update_action"])) {
                 <h2>Cập nhật bài viết</h2>
             </div>
         </div>
-        <!-- /. ROW  -->
         <hr />
 
         <?php echo isset($error['note']) ? $error['note'] : ''; ?>

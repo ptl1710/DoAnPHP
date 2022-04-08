@@ -16,7 +16,7 @@ class adminlib extends dblib
 		return $info;
 	}
 
-	// Add post
+
 	function add_post()
 	{
 		$error = array();
@@ -236,7 +236,6 @@ class adminlib extends dblib
 
 		return $message;
 	}
-
 
 	function login()
 	{
