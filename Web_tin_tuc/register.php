@@ -1,5 +1,4 @@
 <?php
-// Hàm include files
 function inc()
 {
     include 'incs/class_db.php';
